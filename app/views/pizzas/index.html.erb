@@ -1,0 +1,55 @@
+<h1>Listing Pizzas</h1>
+  
+  <div id="listed_pizza">
+
+    <table>
+
+      <thead>
+
+        <tr>
+
+           <th>Name</th>
+           <th>Image</th>
+           <th>Price £</th>
+           <th>Description</th>
+           <th colspan="3"></th>
+
+        </tr>
+
+      </thead>
+
+      <tbody>
+
+<br><br><br>
+
+              <% @pizzas.each do |pizza| %>
+
+        <tr class='one_pizza'>
+
+           <td><%= pizza.name %></td>
+           <td><%= image_tag pizza.image_url %></td>
+           <td><%= pizza.price %></td>
+           <td><%= pizza.description %></td>
+           <td><%= link_to 'Show', pizza, class: 'ED_pizza' %></td>
+           <td><%= link_to 'Edit', edit_pizza_path(pizza), class: 'ED_pizza' %></td>
+           <td><%= link_to 'Destroy', pizza, class: 'ED_pizza', method: :delete, data: {    confirm: 'Are you sure?' } %></td>
+           <td><a href="/pizza/<%= pizza.id %>/like" ><i class="fa fa-thumbs-up fa-3x"></i></a></td>
+           <td id="likes_property"><%= pizza.likes.length %></td>
+
+        </tr>
+
+    <% end %>
+
+   </tbody>
+
+  </div> 
+
+    </table>
+
+<br>
+
+  <div id="new_pizza">
+
+       <%= link_to 'New Pizza', new_pizza_path %>
+       
+  </div>

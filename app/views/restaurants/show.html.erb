@@ -1,0 +1,102 @@
+<div id="show_new_restaurant">
+
+<p>
+
+<br><br>
+
+  <strong>Name:</strong>
+  <%= @restaurant.name %>
+
+</p>
+
+<p>
+
+  <strong>Image:</strong>
+  <%= image_tag @restaurant.image_url %>
+
+</p>
+
+<p>
+
+  <strong>Address:</strong>
+  <span id="address"><%= @restaurant.address %></span>
+
+</p>
+
+<p>
+
+  <strong>Phone:</strong>
+  <%= @restaurant.phone %></span>
+
+</p>
+
+<p>
+
+  <strong>Description:</strong>
+  <%= @restaurant.description %>
+
+</p>
+
+<%= link_to 'Edit', edit_restaurant_path(@restaurant) %> |
+<%= link_to 'Back', restaurants_path %>
+
+</div>
+
+<style>
+  html, body {
+    height: 1000px;
+    margin: 0;
+    padding: 0;
+  }
+  #map {
+    height: 1000px;
+  }
+</style>
+
+<div id="map" style="width: 636px; height: 500px;float:left"></div>
+<div id="pano" style="width: 636px; height: 500px;float:right"></div>
+
+<script>
+	/*
+	 * Click the map to set a new location for the Street View camera.
+	 */
+
+	function initMap() {
+
+		var address = document.getElementById("address").innerHTML;
+		var geocoder = new google.maps.Geocoder();
+
+		geocoder.geocode({"address": address}, function(result, status) {
+			var geocodeObject = result[0];
+			
+			var lat = geocodeObject.geometry.location.lat();
+			var lng = geocodeObject.geometry.location.lng();
+
+		  var location = {lat: lat, lng: lng};
+
+		  var streetviewdiv = document.getElementById('pano');
+		  var panorama = new google.maps.StreetViewPanorama(streetviewdiv, {
+		  	position: location
+		  });
+
+		  // Set up the map.
+		  var map = new google.maps.Map(document.getElementById('map'), {
+		    center: location,
+		    zoom: 12
+		  });
+
+		  var marker = new google.maps.Marker({
+		  	map: map,
+		  	position: location
+		  })
+
+		});
+		
+	}
+
+</script>
+<script
+    src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap"
+    async defer>
+</script>
+

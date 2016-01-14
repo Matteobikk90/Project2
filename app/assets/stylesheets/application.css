@@ -1,0 +1,268 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+#mainav {
+
+    width:100%;
+    height: 40px;
+    background-color: black;
+    
+}
+
+#page_nav a, #sign_in_up a {
+
+    color: white;
+    padding-right: 0px;
+    padding-left: 24px;
+
+}
+
+#sign_in_up a {
+
+    float:right;
+    margin-right: 5%;
+    margin-top: 6px;
+    font-family: 'Indie Flower', cursive;;
+
+}
+
+#page_nav {
+
+	float:left;
+	margin-left: 3%;
+    margin-top: 6px;
+
+}
+
+#main_wrap {
+
+    width: 90%;
+    float:right;
+
+}
+
+body {
+
+    text-align:center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+
+}
+
+h1, h2 {
+
+    text-align:center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 40px;
+    color: black;
+
+}
+
+h1 {
+
+    margin-left: -16px;
+
+}
+
+h2 {
+
+    margin-left: -96px;
+    margin-top: -33px;
+
+}
+
+p {
+
+    text-align:center;
+    font-family: 'Indie Flower', cursive;
+    font-size: 45px;
+    color: firebrick;
+
+}
+
+table td {
+
+    margin: 0 auto;
+    font-size: 24px;
+    color: black;
+
+}
+
+img {
+
+    width: 155px;
+    height: 132px;
+   
+}
+
+#listed_pizza {
+
+    background-color: rgba(81, 75, 52, 0.9);
+    width:65%; 
+    height:65%;
+    margin-left:161px; 
+    margin-top:79px;
+
+}
+
+#listed_restaurant {
+
+    background-color: rgba(255,160,122, 0.6);
+    width:1137px; 
+    margin-left:-79px; 
+    margin-top:27px;
+
+}
+
+#show_new_pizza {
+
+    background-color: rgba(81, 75, 52, 0.9);
+    width:113%; 
+    margin-left:-133px; 
+    margin-top:45px;
+    
+}
+
+#show_new_restaurant {
+
+    width: 111%;
+    margin-left: -124px;
+    margin-top: 79px;
+    background-color: rgba(255,160,122, 0.6);
+
+}
+
+#pizzas_story p {
+
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left:-150px; 
+    margin-top:-22px;
+    width: 113%;
+    font-size: 30px;
+
+}
+
+#thanks p {
+
+    background-color: rgba(255, 255, 255, 0.9);
+    margin-left: -150px;
+    margin-top: -2px;
+    font-size: 35px;
+    font-family: 'Indie Flower', cursive;
+    color: firebrick;
+
+}
+
+h1 p {
+
+    color:firebrick;
+
+}
+
+.one_pizza td {
+
+    font-size: 17px;
+
+}
+
+.one_restaurant td {
+
+    font-size: 17px;
+
+}
+
+#new_edit_restuarant {
+
+    background-color: rgba(255,160,122, 0.6);
+    width: 182px;
+    margin-left: 455px;
+
+}
+
+#new_pizza {
+
+
+    background-color: rgba(81, 75, 52, 0.9);
+    width: 158px;
+    margin-left: 464px;
+
+}
+
+a:-webkit-any-link {
+
+    color: firebrick;
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+
+}
+
+.notice, .alert {
+
+    color: firebrick;
+    font-family: 'Indie Flower', cursive;
+    font-size: 37px;
+    margin-left: -270px;
+
+}
+
+.fa-3x {
+    font-size: 4em;
+    color: firebrick;
+
+}
+
+.fa-5x {
+
+    font-size: 4em;
+    color: lightgoldenrodyellow;
+
+}
+
+#likes_property {
+
+    font-family: 25px;
+
+}
+
+#map {
+
+    width: 605px;
+    height: 500px;
+    float: left;
+    position: absolute;
+    overflow: hidden;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);
+    margin-left: -124px;
+    
+}
+
+#pano {
+
+    width: 636px;
+    height: 500px;
+    float: right;
+    position: relative;
+    overflow: hidden;
+    transform: translateZ(0px);
+    background-color: rgb(229, 227, 223);
+    margin-right: 0px;
+
+}
+
+
+
+

@@ -1,0 +1,46 @@
+<h1>Listing Restaurants</h1>
+   <div id="listed_restaurant">
+       <table>
+           <thead>
+               <tr>
+                  <th>Name</th>
+                  <th>Image</th>
+                  <th>Address</th>
+                  <th>Phone</th>
+                  <th>Description</th>
+                  <th colspan="3"></th>
+               </tr>
+          </thead>
+
+          <tbody>
+<br><br><br>
+
+            <% @restaurants.each do |restaurant| %>
+
+               <tr class="one_restaurant">
+
+                  <td><%= restaurant.name %></td>
+                  <td><%= image_tag restaurant.image_url %></td>
+                  <td><%= restaurant.address %></td>
+                  <td><%= restaurant.phone %></td>
+                  <td><%= restaurant.description %></td>
+                  <td><%= link_to 'Maps', restaurant, class: 'ED_restaurant' %></td>
+                  <td><%= link_to 'Edit', edit_restaurant_path(restaurant), class: '          ED_restaurant' %></td>
+                  <td><%= link_to 'Destroy', restaurant, class: 'ED_restaurant', method: :delete          , data: { confirm: 'Are you sure?' } %></td>
+                  <td><a href="/restaurant/<%= restaurant.id %>/like" ><i class="fa fa-thumbs-up fa-5x"></i></a></td>
+                  <td><%= restaurant.likerestaurants.length %></td>
+
+               </tr>
+
+            <% end %>
+
+          </tbody>
+
+       </table>
+<br>
+
+   <div id="new_restaurant">
+
+       <%= link_to 'New Restaurant', new_restaurant_path %>
+
+   </div>

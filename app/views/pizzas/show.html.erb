@@ -1,0 +1,36 @@
+<div id="show_new_pizza">
+
+<p>
+
+<br><br>
+
+  <strong>Name:</strong>
+  <%= @pizza.name %>
+
+</p>
+
+<p>
+
+  <strong>Image:</strong>
+  <%= image_tag @pizza.image_url %>
+
+</p>
+
+<p>
+
+  <strong>Price £:</strong>
+  <%= @pizza.price %>
+
+</p>
+
+<p>
+
+  <strong>Description:</strong>
+  <%= @pizza.description %>
+  
+</p>
+
+<%= link_to 'Edit', edit_pizza_path(@pizza) %> |
+<%= link_to 'Back', pizzas_path %>
+
+</div>
