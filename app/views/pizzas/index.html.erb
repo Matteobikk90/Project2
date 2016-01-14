@@ -34,7 +34,7 @@
            <td><%= link_to 'Edit', edit_pizza_path(pizza), class: 'ED_pizza' %></td>
            <td><%= link_to 'Destroy', pizza, class: 'ED_pizza', method: :delete, data: {    confirm: 'Are you sure?' } %></td>
            <td><a href="/pizza/<%= pizza.id %>/like" ><i class="fa fa-thumbs-up fa-3x"></i></a></td>
-           <td id="likes_property"><%= pizza.likes.length %></td>
+           <td id="likes_size"><%= pizza.likes.length %></td>
 
         </tr>
 

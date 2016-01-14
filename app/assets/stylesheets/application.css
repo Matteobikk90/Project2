@@ -239,12 +239,6 @@ a:-webkit-any-link {
 
 }
 
-#likes_property {
-
-    font-family: 25px;
-
-}
-
 #map {
 
     width: 605px;
@@ -270,6 +264,13 @@ a:-webkit-any-link {
     margin-right: 0px;
 
 }
+
+#likes_size {
+
+    font-size: 25px;
+
+}
+
 
 
 

@@ -28,7 +28,7 @@
                   <td><%= link_to 'Edit', edit_restaurant_path(restaurant), class: '          ED_restaurant' %></td>
                   <td><%= link_to 'Destroy', restaurant, class: 'ED_restaurant', method: :delete          , data: { confirm: 'Are you sure?' } %></td>
                   <td><a href="/restaurant/<%= restaurant.id %>/like" ><i class="fa fa-thumbs-up fa-5x"></i></a></td>
-                  <td><%= restaurant.likerestaurants.length %></td>
+                  <td id="likes_size"><%= restaurant.likerestaurants.length %></td>
 
                </tr>
 
