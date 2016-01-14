@@ -25,7 +25,7 @@
 
 PIZZA && GO
 
-Pizzas and Restaurants database where everyone can sign up/in and create/recommend their favourite ones, uploading photos, telephone numbers, a desciption and more.
+Pizzas and Restaurants database where everyone can sign up/in and create/recommend their favourite ones, uploading photos, telephone numbers, a description and more.
 
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) 
