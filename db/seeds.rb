@@ -16,16 +16,12 @@ E1 6JJ", phone: "020-77291888", description: "In a former tea warehouse on the c
 
 r4 = Restaurant.create(name:"Figli del Vesuvio", image_url:"http://media-cdn.tripadvisor.com/media/photo-s/09/d3/9b/e2/figli-del-vesuvio.jpg", address: "658 Garratt Lane-Wandsworth-London-SW17 0NP", phone: "020-36091118", description: "We grew up in Naples where the pizza is originated from. We decided to a open a friendly Neapolitan restaurant in South London which is exactly like the original ones in Naples. We did and keep doing everything on the same way like in Napoli and now we believe that we are among the best and most authentic Neapolitan Pizzerias & Restaurants in London – we explain why:
 We are using high quality authentic Italian ingredients with D.O.P. certificates. Most of them are from Campania, the region where Naples is.
-We follow the original recipes and keep our dishes authentic Neapolitan – except our signature Figli del Vesuvio pizza which is our own specialty.
-We bake our pizzas in our traditional Napolitano style wood fired oven built of lava stone from Mount Vesuvius. Yes, from the vulcan by the Bay of Naples.
-We pay attention to details creating the typical Napolitano mood with specific interior design and playing authentic Italian oldies music. Dolce Vita!")
+We follow the original recipes and keep our dishes authentic Neapolitan. Dolce Vita!")
 
 r5 = Restaurant.create(name:"MimmoLaBufala", image_url:"http://www.coolplaces.co.uk/system/images/4289/Fratelli%20la%20Bufala%20-%20ext-large.jpg", address: "45A South End Road,
 Hampstead, London,
 NW3 2QB", phone: "020-74357814", description: "An indispensable fixture of Hampstead (Hardens 2012), the restaurant serves healthy and traditional Southern Italian pizza and pasta with a contemporary flare.
-With many awards and nominations over the last 8 years, Mimmo La Bufala showcases the gastronomic heritage of Naples with critically acclaimed pizzas, pasta, fish and meat dishes. Unlike many other restaurants that claim to cook pizzas the Italian way, our real wood-fired oven ensures extraordinarily tasty and authentic pizzas, using the finest, Italian toppings.
-The emphasis has always been on quality and freshness, not just the fish dishes, but also for the veal steak and lamb milanese.
-Expect fine dining but a warm and welcoming atmosphere, nothing stuffy! The Mimmo La Bufala  team are always on hand to make your dining experience one that your will be sharing with your friends, keeping you returning time and time again.")
+With many awards and nominations over the last 8 years, Mimmo La Bufala showcases the gastronomic heritage of Naples with critically acclaimed pizzas, pasta, fish and meat dishes.")
 
 
 p1 = Pizza.create(name:"Pizza with Vegetables", image_url:"http://cibovegetariano.it/wp-content/uploads/2011/11/pizza-verdure.jpg", price: 9.98, description: "Pizza with Vegetables - Various plant - Mozzarella Cheese")
